@@ -1,0 +1,100 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "7a8e2e72-6ab6-434f-bfb6-3c6439a65fe2": {
+        "id": "7a8e2e72-6ab6-434f-bfb6-3c6439a65fe2",
+        "parent": null,
+        "name": "londonindunil",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "4b0c01a1-dd0e-4144-a7fd-2a2fb91710b9"
+        ],
+        "isRemovable": false,
+        "filePath": "londonindunil"
+      },
+      "4b0c01a1-dd0e-4144-a7fd-2a2fb91710b9": {
+        "id": "4b0c01a1-dd0e-4144-a7fd-2a2fb91710b9",
+        "parent": "7a8e2e72-6ab6-434f-bfb6-3c6439a65fe2",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "londonindunil/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed in London using GitHubb\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0,
+          "handler": "handler"
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "7273610c-471e-4814-9e26-b9b3c5c9cd9f": {
+        "id": "7273610c-471e-4814-9e26-b9b3c5c9cd9f",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.londonindunilfunction = require(\"./londonindunil/function.js\").handler;"
+      },
+      "bdf41f1e-0e95-4ab5-9bc2-02410d6a338b": {
+        "id": "bdf41f1e-0e95-4ab5-9bc2-02410d6a338b",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py",
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+      }
+    },
+    "rootNode": "7a8e2e72-6ab6-434f-bfb6-3c6439a65fe2",
+    "openFiles": [
+      "4b0c01a1-dd0e-4144-a7fd-2a2fb91710b9"
+    ],
+    "currentFileId": "4b0c01a1-dd0e-4144-a7fd-2a2fb91710b9",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "londonindunil",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "europe-west2",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1568784437680
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "londonindunil",
+      "url": "https://github.com/Indunil1992/londonindunil"
+    }
+  }
+}
